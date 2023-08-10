@@ -1,0 +1,52 @@
+version: '3'
+
+tasks:
+  abc:
+    dir: '{{.USER_WORKING_DIR}}/ABC'
+    cmds:
+      - cargo compete new {{.CLI_ARGS}} && cargo member include {{.CLI_ARGS}}
+
+  abc-test-a:
+    dir: '{{.USER_WORKING_DIR}}/ABC/{{.CLI_ARGS}}'
+    cmds:
+      - cargo compete test a
+
+  abc-test-b:
+    dir: '{{.USER_WORKING_DIR}}/ABC/{{.CLI_ARGS}}'
+    cmds:
+      - cargo compete test b
+
+  abc-test-c:
+    dir: '{{.USER_WORKING_DIR}}/ABC/{{.CLI_ARGS}}'
+    cmds:
+      - cargo compete test c
+
+  abc-test-d:
+    dir: '{{.USER_WORKING_DIR}}/ABC/{{.CLI_ARGS}}'
+    cmds:
+      - cargo compete test d
+
+  arc:
+    dir: '{{.USER_WORKING_DIR}}/ARC'
+    cmds:
+      - cargo compete new {{.CLI_ARGS}} && cargo member include {{.CLI_ARGS}}
+
+  arc-test-a:
+    dir: '{{.USER_WORKING_DIR}}/ARC/{{.CLI_ARGS}}'
+    cmds:
+      - cargo compete test a
+
+  arc-test-b:
+    dir: '{{.USER_WORKING_DIR}}/ARC/{{.CLI_ARGS}}'
+    cmds:
+      - cargo compete test b
+
+  arc-test-c:
+    dir: '{{.USER_WORKING_DIR}}/ARC/{{.CLI_ARGS}}'
+    cmds:
+      - cargo compete test c
+
+  arc-test-d:
+    dir: '{{.USER_WORKING_DIR}}/ARC/{{.CLI_ARGS}}'
+    cmds:
+      - cargo compete test d
