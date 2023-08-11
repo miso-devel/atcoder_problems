@@ -9,7 +9,7 @@ tasks:
   abc-test-a:
     dir: '{{.USER_WORKING_DIR}}/ABC/{{.CLI_ARGS}}'
     cmds:
-      - cargo compete test a
+      - cargo compete test a --release
 
   abc-test-b:
     dir: '{{.USER_WORKING_DIR}}/ABC/{{.CLI_ARGS}}'
@@ -26,6 +26,26 @@ tasks:
     cmds:
       - cargo compete test d
 
+  abc-submit-a:
+    dir: '{{.USER_WORKING_DIR}}/ABC/{{.CLI_ARGS}}'
+    cmds:
+      - cargo compete submit a --release
+
+  abc-submit-b:
+    dir: '{{.USER_WORKING_DIR}}/ABC/{{.CLI_ARGS}}'
+    cmds:
+      - cargo compete submit b --release
+
+  abc-submit-c:
+    dir: '{{.USER_WORKING_DIR}}/ABC/{{.CLI_ARGS}}'
+    cmds:
+      - cargo compete submit c --release
+
+  abc-submit-d:
+    dir: '{{.USER_WORKING_DIR}}/ABC/{{.CLI_ARGS}}'
+    cmds:
+      - cargo compete submit d --release
+
   arc:
     dir: '{{.USER_WORKING_DIR}}/ARC'
     cmds:
@@ -34,19 +54,39 @@ tasks:
   arc-test-a:
     dir: '{{.USER_WORKING_DIR}}/ARC/{{.CLI_ARGS}}'
     cmds:
-      - cargo compete test a
+      - cargo compete test a --release
 
   arc-test-b:
     dir: '{{.USER_WORKING_DIR}}/ARC/{{.CLI_ARGS}}'
     cmds:
-      - cargo compete test b
+      - cargo compete test b --release
 
   arc-test-c:
     dir: '{{.USER_WORKING_DIR}}/ARC/{{.CLI_ARGS}}'
     cmds:
-      - cargo compete test c
+      - cargo compete test c --release
 
   arc-test-d:
     dir: '{{.USER_WORKING_DIR}}/ARC/{{.CLI_ARGS}}'
     cmds:
-      - cargo compete test d
+      - cargo compete test d --release
+
+  arc-submit-a:
+    dir: '{{.USER_WORKING_DIR}}/ARC/{{.CLI_ARGS}}'
+    cmds:
+      - cargo compete submit a --release
+
+  arc-submit-b:
+    dir: '{{.USER_WORKING_DIR}}/ARC/{{.CLI_ARGS}}'
+    cmds:
+      - cargo compete submit b --release
+
+  arc-submit-c:
+    dir: '{{.USER_WORKING_DIR}}/ARC/{{.CLI_ARGS}}'
+    cmds:
+      - cargo compete submit c --release
+
+  arc-submit-d:
+    dir: '{{.USER_WORKING_DIR}}/ARC/{{.CLI_ARGS}}'
+    cmds:
+      - cargo compete submit d --release
