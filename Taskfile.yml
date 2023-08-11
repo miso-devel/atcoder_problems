@@ -4,7 +4,7 @@ tasks:
   abc:
     dir: '{{.USER_WORKING_DIR}}/ABC'
     cmds:
-      - cargo compete new {{.CLI_ARGS}} && cargo member include {{.CLI_ARGS}}
+      - cargo compete new abc{{.CLI_ARGS}} && cargo member include abc{{.CLI_ARGS}}
 
   abc-test-a:
     dir: '{{.USER_WORKING_DIR}}/ABC/{{.CLI_ARGS}}'
@@ -49,7 +49,7 @@ tasks:
   arc:
     dir: '{{.USER_WORKING_DIR}}/ARC'
     cmds:
-      - cargo compete new {{.CLI_ARGS}} && cargo member include {{.CLI_ARGS}}
+      - cargo compete new arc{{.CLI_ARGS}} && cargo member include arc{{.CLI_ARGS}}
 
   arc-test-a:
     dir: '{{.USER_WORKING_DIR}}/ARC/{{.CLI_ARGS}}'
