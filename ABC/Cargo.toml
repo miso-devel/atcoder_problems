@@ -1,4 +1,4 @@
-workspace = {members = ["practice", "abc313"],exclude = []}
+workspace = {members = ["practice", "abc313", "abc359"],exclude = []}
 [package]
 name = "ABC"
 version = "0.1.0"
