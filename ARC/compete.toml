@@ -127,6 +127,11 @@ path = "./{{ contest }}"
 ##bin-alias = '{% assign segments = url | split: "/" %}{{ segments[5] }}' # optional
 ##bin-src-path = './src/bin/{{ bin_alias }}.rs' # optional
 
+[submit]
+kind = "file"
+path = "{{ src_path }}"
+language_id = "5054"
+
 [test]
 # Toolchain for the test. (optional)
 
