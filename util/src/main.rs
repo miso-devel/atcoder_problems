@@ -1,4 +1,5 @@
 mod insertion_sort;
+mod rotate;
 
 fn main() {
     println!("Hello, world!");
