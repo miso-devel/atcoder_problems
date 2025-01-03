@@ -31,3 +31,7 @@ task arc-test-b -- [arc]
 task arc-test-c -- [arc]
 task arc-test-d -- [arc]
 ```
+## エラーハンドリング
+```
+task abc-test-a -- 001 などを実行しようとするときにIO error for operation on ~/atcoder/ABC/abc006/testcases/c: No such file or directory (os error 2) が出た場合は、実行しようとしているテストのtestcase配下にフォルダが足りていないので/aフォルダなど追加する
+```
