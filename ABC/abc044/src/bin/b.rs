@@ -5,13 +5,13 @@ use proconio::{fastout, input};
 #[fastout]
 fn main() {
     input! {
-        w:i32,
+        w:String,
     }
 
     let mut hash = HashMap::new();
-    for i in 1..=w {
+    for i in w.chars() {
         if hash.contains_key(&i) {
-            hash.insert(i, hash[&i] + 1);
+            hash.insert(i, hash.get(&i).unwrap() + 1);
         } else {
             hash.insert(i, 1);
         }
