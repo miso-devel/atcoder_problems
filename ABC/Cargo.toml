@@ -22,7 +22,7 @@ workspace = { members = [
     "abc042",
     "abc043",
     "abc044",
-    "abc045", "abc046",
+    "abc045", "abc046", "abc048",
 ], exclude = [
 ] }
 [package]
